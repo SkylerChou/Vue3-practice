@@ -56,7 +56,7 @@ const eventArr = ref([
 
     <div class="absolute left-0 bottom-0 grid sm:grid-cols-10">
       <div
-        class="relative z-10 p-4 bg-black/40 sm:col-start-2 sm:col-span-5 text-white text-base flex flex-col justify-center pl-10 before:content-[''] before:bottom-0 before:-z-1 before:w-full before:h-full backdrop-blur-[6px]"
+        class="p-4 bg-black/40 sm:col-start-2 sm:col-span-5 text-white text-base flex flex-col justify-center pl-10 backdrop-blur-[6px]"
       >
         <h4 class="tracking-4 mb-3 sm:mb-6">EVENT</h4>
         <div>
