@@ -1,0 +1,11 @@
+<template>
+  <div class="text-white p-40">About</div>
+</template>
+
+<script>
+export default {
+  setup() {
+    
+  },
+}
+</script>
