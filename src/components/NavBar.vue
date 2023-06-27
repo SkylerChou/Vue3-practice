@@ -38,27 +38,27 @@
           </div>
         </nav>
       </div>
-   
+
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const navArr = ref([
-  { name: "Home", path: "/" },
-  { name: "Article", path: "/article" },
-  { name: "About", path: "/about" },
-  { name: "Location", path: "/location" },
-  { name: "News", path: "/news" },
+  { name: 'Home', path: '/' },
+  { name: 'Article', path: '/article' },
+  { name: 'About', path: '/about' },
+  { name: 'Location', path: '/location' },
+  { name: 'News', path: '/news' },
 ]);
 
-const sideBarClass = ref("hidden");
+const sideBarClass = ref('hidden');
 
 function changeNavState() {
-  if (sideBarClass.value === "hidden") {
-    sideBarClass.value = "block";
+  if (sideBarClass.value === 'hidden') {
+    sideBarClass.value = 'block';
   } else {
-    sideBarClass.value = "hidden";
+    sideBarClass.value = 'hidden';
   }
 }
 </script>

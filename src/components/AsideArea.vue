@@ -16,11 +16,11 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import twitterImg from "@/assets/tumblr.svg";
-import linkedinImg from "@/assets/linkedin.svg";
-import facebookImg from "@/assets/facebook.svg";
-import { useCounterStore } from "@/stores/counter";
+import { ref } from 'vue';
+import twitterImg from '@/assets/tumblr.svg';
+import linkedinImg from '@/assets/linkedin.svg';
+import facebookImg from '@/assets/facebook.svg';
+import { useCounterStore } from '@/stores/counter';
 
 const counter = useCounterStore();
 window.setInterval(() => {
@@ -28,8 +28,8 @@ window.setInterval(() => {
 }, 1000);
 
 const socialImgArr = ref([
-  { url: twitterImg, alt: "Twitter" },
-  { url: linkedinImg, alt: "Linkedin" },
-  { url: facebookImg, alt: "Facebook" },
+  { url: twitterImg, alt: 'Twitter' },
+  { url: linkedinImg, alt: 'Linkedin' },
+  { url: facebookImg, alt: 'Facebook' },
 ]);
 </script>

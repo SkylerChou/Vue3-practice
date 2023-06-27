@@ -44,26 +44,26 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const eventArr = ref([
   {
-    activeClass: "yellow",
-    title: "EVENT1",
+    activeClass: 'yellow',
+    title: 'EVENT1',
     content: "Cat's Foods @Anything About Cat Club",
-    date: "SF - Sat,July 14 / 15-17PM",
+    date: 'SF - Sat,July 14 / 15-17PM',
   },
   {
-    activeClass: "gray",
-    title: "EVENT2",
+    activeClass: 'gray',
+    title: 'EVENT2',
     content: "Cat's Foods @Anything About Cat Club",
-    date: "SF - Sat,July 15 / 15-17PM",
+    date: 'SF - Sat,July 15 / 15-17PM',
   },
   {
-    activeClass: "gray",
-    title: "EVENT3",
+    activeClass: 'gray',
+    title: 'EVENT3',
     content: "Cat's Foods @Anything About Cat Club",
-    date: "SF - Sat,July 16 / 15-17PM",
+    date: 'SF - Sat,July 16 / 15-17PM',
   },
 ]);
 </script>

@@ -1,5 +1,5 @@
 <script setup>
-import InfoBanner from "@/components/InfoBanner.vue";
+import InfoBanner from '@/components/InfoBanner.vue';
 </script>
 
 <template>

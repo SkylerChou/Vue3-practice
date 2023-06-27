@@ -11,6 +11,6 @@
 </template>
 
 <script setup>
-import NavBar from "@/components/NavBar.vue";
-import AsideArea from "@/components/AsideArea.vue";
+import NavBar from '@/components/NavBar.vue';
+import AsideArea from '@/components/AsideArea.vue';
 </script>

@@ -2,11 +2,31 @@
 
 module.exports = {
   root: true,
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
+    'airbnb-base',
   ],
   parserOptions: {
-    ecmaVersion: 'latest'
-  }
-}
+    ecmaVersion: 'latest',
+  },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+        extensions: ['.js', '.vue'],
+      },
+    },
+    'import/core-modules': [
+      'vite',
+      '@vitejs/plugin-vue',
+      'unocss',
+      'unocss/vite',
+    ],
+  },
+  rules: {
+    'max-len': 0,
+  },
+};
