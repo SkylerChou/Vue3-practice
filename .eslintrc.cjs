@@ -29,6 +29,6 @@ module.exports = {
     ],
   },
   rules: {
-    'max-len': 0,
+    // 'max-len': 0,
   },
 };

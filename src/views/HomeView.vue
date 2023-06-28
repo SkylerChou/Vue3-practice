@@ -14,7 +14,13 @@ import ArticleContent from '@/components/ArticleContent.vue';
           border="b-white b-solid"
           tracking="widest"
           leading="10"
-          class="relative after:absolute after:left-0 after:w-1/2 after:border-b-yellow-200 after:border-b-solid after:content-[''] after:-bottom-3px"
+          relative
+          after:absolute
+          after:left-0
+          after:border-b-yellow-200
+          after:border-b-solid
+          after:-bottom-3px
+          class="after:w-1/2 after:content-['']"
         >
           / 01
         </h3>

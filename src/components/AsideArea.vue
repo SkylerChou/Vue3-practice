@@ -1,9 +1,11 @@
 <template>
   <aside
-    class="relative col-auto hidden border-r border-r-solid bg-stone-950 border-r-gray sm:block"
+    border="r r-solid r-gray"
+    bg-stone-950
+    class="relative col-auto hidden sm:block"
   >
-    <h1 class="mt-10 text-center text-white text-41">CAT {{ counter.count }}</h1>
-    <div class="absolute h-32 w-full flex flex-col justify-between bottom-10">
+    <h1 m-10 text="center white 41">CAT {{ counter.count }}</h1>
+    <div h-32 w-full flex="~ col" class="absolute justify-between bottom-10">
       <div
         class="mx-auto h-5 w-5"
         v-for="(item, index) in socialImgArr"
