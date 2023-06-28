@@ -3,12 +3,16 @@ import {
 } from 'unocss';
 
 import presetAttributify from '@unocss/preset-attributify';
+import transformerVariantGroup from '@unocss/transformer-variant-group';
 
 export default defineConfig({
   // ...UnoCSS options
   presets: [
     presetUno(),
     presetAttributify(),
+  ],
+  transformers: [
+    transformerVariantGroup(),
   ],
   rules: [
     ['border-r-gray', { 'border-right-color': '#707070' }],

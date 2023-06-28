@@ -8,18 +8,18 @@
     </div>
   </div>
 
-  <div :class="`${sideBarClass} sm:block w-full`">
+  <div :class="`${sideBarClass} w-full sm:block`">
     <nav
       fixed
       top-20
       h="1/5"
       w-full
       bg-black
-      class="sm:top-0 sm:mr-11 sm:mt-8 sm:h-6 sm:bg-transparent sm:-right-48"
+      class="sm:(top-0 mr-11 mt-8 h-6 bg-transparent -right-48)"
     >
       <div
         flex="~ col"
-        class="content-center justify-between sm:grid sm:grid-cols-12"
+        class="content-center justify-between sm:(grid grid-cols-12)"
       >
         <RouterLink
           v-for="(item, index) in navArr"
@@ -27,7 +27,7 @@
           :to="item.path"
           @click="changeNavState()"
           un-text="center white"
-          class="no-underline sm:col-span-1 first:col-start-6 hover:underline hover:text-yellow-550"
+          class="no-underline sm:col-span-1 first:col-start-6 hover:(underline text-yellow-550)"
           >{{ item.name }}</RouterLink
         >
         <div mx-auto w-fit>
