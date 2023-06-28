@@ -5,6 +5,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
+    '@unocss',
     'airbnb-base',
   ],
   parserOptions: {
@@ -24,6 +25,7 @@ module.exports = {
       '@vitejs/plugin-vue',
       'unocss',
       'unocss/vite',
+      '@unocss/preset-attributify',
     ],
   },
   rules: {
