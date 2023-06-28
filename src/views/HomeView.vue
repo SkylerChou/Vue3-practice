@@ -17,10 +17,8 @@ import ArticleContent from '@/components/ArticleContent.vue';
           font-normal
           after:absolute
           after:left-0
-          after:border-b-yellow-200
-          after:border-b-solid
           after:-bottom-3px
-          class="after:w-1/2 after:content-['']"
+          class="after:(w-1/2 border-b-yellow-200 border-b-solid content-[''])"
         >
           / 01
         </h3>

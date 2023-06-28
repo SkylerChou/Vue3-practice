@@ -42,8 +42,7 @@
           The average lifespan of pet cats has risen in recent decades.
         </p>
         <a
-          text="base yellow-550"
-          class="no-underline hover:underline"
+          class="text-(base yellow-550) no-underline hover:underline"
           href="https://www.youtube.com/"
           >Read more</a
         >
