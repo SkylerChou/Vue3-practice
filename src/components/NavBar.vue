@@ -1,35 +1,35 @@
 <template>
 
    <div class="sm:hidden">
-        <div class="flex justify-between content-center mt-4 pl-4 pr-4">
-          <h1 class="text-center text-41 text-white m-0">CAT</h1>
-          <div class="w-6 mt-auto mb-auto" @click="changeNavState()">
-            <img class="w-full h-auto mb-0" src="@/assets/ham.svg" alt="≡" />
+        <div class="mt-4 flex content-center justify-between pl-4 pr-4">
+          <h1 class="m-0 text-center text-white text-41">CAT</h1>
+          <div class="mb-auto mt-auto w-6" @click="changeNavState()">
+            <img class="mb-0 h-auto w-full" src="@/assets/ham.svg" alt="≡" />
           </div>
         </div>
       </div>
 
       <div :class="`${sideBarClass} sm:block w-full`">
         <nav
-          class="fixed top-20 sm:top-0 sm:-right-48 w-full h-1/5 bg-black sm:bg-transparent sm:mt-8 sm:mr-11 sm:h-6"
+          class="fixed top-20 h-1/5 w-full bg-black sm:top-0 sm:mr-11 sm:mt-8 sm:h-6 sm:bg-transparent sm:-right-48"
         >
           <div
-            class="flex flex-col justify-between content-center sm:grid sm:grid-cols-12"
+            class="flex flex-col content-center justify-between sm:grid sm:grid-cols-12"
           >
             <RouterLink
               v-for="(item, index) in navArr"
               :key="index"
               :to="item.path"
               @click="changeNavState()"
-              class="text-white text-center no-underline hover:underline hover:text-yellow-550 sm:col-span-1 first:col-start-6"
+              class="text-center text-white no-underline sm:col-span-1 first:col-start-6 hover:underline hover:text-yellow-550"
               >{{ item.name }}</RouterLink
             >
             <div
-              class="sm:col-span-1 text-white text-center no-underline hover:underline hover:text-yellow-550"
+              class="text-center text-white no-underline sm:col-span-1 hover:underline hover:text-yellow-550"
             >
-              <div class="w-fit mx-auto">
+              <div class="mx-auto w-fit">
                 <img
-                  class="w-full h-auto m-0"
+                  class="m-0 h-auto w-full"
                   src="@/assets/scope.svg"
                   alt=""
                 />

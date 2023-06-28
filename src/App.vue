@@ -1,8 +1,9 @@
 <template>
-  <div class="grid grid-cols-10 min-h-screen">
+  <div class="min-h-screen" grid="~ cols-10">
     <AsideArea />
     <div
-      class="bg-gradient-to-r from-stone-950 to-stone-700 col-span-10 sm:col-span-9"
+      bg="gradient-to-r"
+      class="col-span-10 from-stone-950 to-stone-700 sm:col-span-9"
     >
       <NavBar />
       <RouterView />

@@ -1,16 +1,16 @@
 <template>
   <div class="grid sm:grid-cols-10">
       <div
-        class="p-4 bg-black/40 sm:col-start-2 sm:col-span-5 text-white text-base flex flex-col justify-center pl-10 backdrop-blur-[6px]"
+        class="flex flex-col justify-center bg-black/40 p-4 pl-10 text-base text-white backdrop-blur-[6px] sm:col-span-5 sm:col-start-2"
       >
-        <h4 class="tracking-4 mb-3 sm:mb-6">EVENT</h4>
+        <h4 class="mb-3 tracking-4 sm:mb-6">EVENT</h4>
         <div>
-          <p class="tracking-2 text-gray-500">
+          <p class="text-gray-500 tracking-2">
             Cat's Foods @Anything About Cat Club
           </p>
           <p class="tracking-2">SF - Sat,July 14 / 15-17PM</p>
         </div>
-        <div class="w-12 flex justify-between mt-6">
+        <div class="mt-6 w-12 flex justify-between">
           <div
             v-for="(item, index) in eventArr"
             :key="index"
@@ -19,22 +19,22 @@
         </div>
       </div>
       <div
-        class="p-4 sm:col-start-7 sm:col-span-6 flex flex-row-reverse sm:flex-row bg-black"
+        class="flex flex-row-reverse bg-black p-4 sm:col-span-6 sm:col-start-7 sm:flex-row"
       >
         <div class="m-auto">
           <img
-            class="w-full h-auto m-0 sm:h-full"
+            class="m-0 h-auto w-full sm:h-full"
             src="@/assets/pc-Left.png"
             alt="Holding the cat."
           />
         </div>
-        <div class="flex flex-col justify-center ml-6">
-          <h4 class="text-white text-base tracking-4 mb-3 sm:mb-6">NEWS</h4>
-          <p class="text-sm tracking-2 text-gray-500 pr-3 sm:pr-6 mb-3 sm:mb-6">
+        <div class="ml-6 flex flex-col justify-center">
+          <h4 class="mb-3 text-base text-white tracking-4 sm:mb-6">NEWS</h4>
+          <p class="mb-3 pr-3 text-sm text-gray-500 tracking-2 sm:mb-6 sm:pr-6">
             The average lifespan of pet cats has risen in recent decades.
           </p>
           <a
-            class="text-base text-yellow-550 no-underline hover:underline"
+            class="text-base no-underline text-yellow-550 hover:underline"
             href="https://www.youtube.com/"
             >Read more</a
           >

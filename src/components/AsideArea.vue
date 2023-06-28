@@ -1,15 +1,15 @@
 <template>
   <aside
-    class="relative bg-stone-950 border-r border-r-gray border-r-solid col-auto hidden sm:block"
+    class="relative col-auto hidden border-r border-r-solid bg-stone-950 border-r-gray sm:block"
   >
-    <h1 class="text-center text-41 text-white mt-10">CAT {{ counter.count }}</h1>
-    <div class="w-full h-32 absolute bottom-10 flex flex-col justify-between">
+    <h1 class="mt-10 text-center text-white text-41">CAT {{ counter.count }}</h1>
+    <div class="absolute h-32 w-full flex flex-col justify-between bottom-10">
       <div
-        class="w-5 h-5 mx-auto"
+        class="mx-auto h-5 w-5"
         v-for="(item, index) in socialImgArr"
         :key="index"
       >
-        <img class="w-full h-auto mb-0" :src="item.url" :alt="item.alt" />
+        <img class="mb-0 h-auto w-full" :src="item.url" :alt="item.alt" />
       </div>
     </div>
   </aside>
