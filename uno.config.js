@@ -1,16 +1,14 @@
 import {
-  defineConfig, presetAttributify,
-  presetUno,
+  defineConfig, presetUno,
 } from 'unocss';
+
+import presetAttributify from '@unocss/preset-attributify';
 
 export default defineConfig({
   // ...UnoCSS options
   presets: [
     presetUno(),
-    presetAttributify({
-      prefix: 'un-',
-      prefixedOnly: true,
-    }),
+    presetAttributify(),
   ],
   rules: [
     ['border-r-gray', { 'border-right-color': '#707070' }],
