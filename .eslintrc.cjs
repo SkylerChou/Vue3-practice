@@ -29,6 +29,9 @@ module.exports = {
       'unocss/vite',
       '@unocss/preset-attributify',
       '@unocss/transformer-variant-group',
+      'vee-validate',
+      '@vee-validate/rules',
+      '@vee-validate/i18n',
     ],
   },
   rules: {
