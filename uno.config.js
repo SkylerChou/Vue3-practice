@@ -7,13 +7,8 @@ import transformerVariantGroup from '@unocss/transformer-variant-group';
 
 export default defineConfig({
   // ...UnoCSS options
-  presets: [
-    presetUno(),
-    presetAttributify(),
-  ],
-  transformers: [
-    transformerVariantGroup(),
-  ],
+  presets: [presetUno(), presetAttributify()],
+  transformers: [transformerVariantGroup()],
   rules: [
     ['border-r-gray', { 'border-right-color': '#707070' }],
     ['text-yellow-550', { color: 'rgb(239, 200, 98)' }],
@@ -26,4 +21,13 @@ export default defineConfig({
     ['tracking-4', { 'letter-spacing': '0.4em' }],
     ['-z-1', { 'z-index': '-1' }],
   ],
+  theme: {
+    breakpoints: {
+      sm: '470px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1500px',
+    },
+  },
 });

@@ -2,9 +2,9 @@
   <aside
     border="r r-solid r-gray"
     bg-stone-950
-    class="relative col-auto hidden sm:block"
+    class="relative col-auto hidden md:block"
   >
-    <h1 m-10 text="center white 41">CAT {{ counter.count }}</h1>
+    <h1 text="center white 41">CAT <br/>{{ counter.count }}</h1>
     <div h-32 w-full flex="~ col" class="absolute justify-between bottom-10">
       <div
         class="mx-auto h-5 w-5"
